@@ -1,8 +1,12 @@
 FROM php:8.3-cli
 
-# System certs + curl support for outgoing HTTPS API calls
+# System certs + cURL extension dependencies for outgoing HTTPS API calls
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends ca-certificates curl \
+    && apt-get install -y --no-install-recommends \
+        ca-certificates \
+        curl \
+        pkg-config \
+        libcurl4-openssl-dev \
     && docker-php-ext-install curl \
     && rm -rf /var/lib/apt/lists/*
 
