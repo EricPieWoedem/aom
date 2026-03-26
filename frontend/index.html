@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Coaching & Consulting — Master Communication, Lead with Impact</title>
+  <meta name="description"
+    content="Professional language coaching and business consulting. Speak with confidence. Strategize with clarity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">Arsène Ousmane Methods</a>
+      <ul class="nav-links">
+        <li><a href="#coaching">Coaching</a></li>
+        <li><a href="#consulting">Consulting</a></li>
+        <li><a href="#about">About</a></li>
+        <li>
+          <button type="button" class="theme-toggle" aria-label="Switch to light mode" title="Switch theme">
+            <svg class="icon-sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+            </svg>
+            <svg class="icon-moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+        </li>
+        <li><a href="#cta" class="nav-cta">Get Started</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" role="img" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-label">Speak with confidence. Lead with impact.</p>
+        <h1 class="hero-title">
+          Start <em> Business English </em> Today
+        </h1>
+        <h2 class="hero-title2">
+          by <em> Becoming </em>.
+        </h2>
+        <a href="#" class="btn btn-primary cta-payment" onclick="openPaymentModal(); return false;">
+          VIP Client Package
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+            style="vertical-align: middle; margin-left: 0.4em;" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+        <p class="hero-subtitle">
+          One-on-one language coaching.
+        </p>
+      </div>
+    </section>
+
+    <section id="coaching" class="section section-coaching">
+      <div class="container section-grid">
+        <div class="section-content">
+          <span class="section-tag">Language Coaching</span>
+          <h2 class="section-title">Fluency that opens doors</h2>
+          <p class="section-text">
+            Whether you're preparing for interviews, presentations, or daily professional communication, we work on
+            clarity, accent, and confidence so you sound as capable as you are.
+          </p>
+          <ul class="feature-list">
+            <li>One-on-one sessions tailored to your goals</li>
+            <li>Pronunciation, fluency, and business vocabulary</li>
+            <li>Flexible scheduling to fit your calendar</li>
+          </ul>
+          <a href="#" class="btn btn-secondary cta-payment" onclick="openPaymentModal(); return false;">Reserve Your
+            Coaching Slot</a>
+        </div>
+        <div class="section-image-wrap">
+          <img src="images/1.jpg" alt="One-on-one language coaching session" width="800" height="600">
+        </div>
+      </div>
+    </section>
+
+    <section id="consulting" class="section section-consulting">
+      <div class="container section-grid section-grid-reverse">
+        <div class="section-content">
+          <span class="section-tag">Consulting</span>
+          <h2 class="section-title">Strategy that delivers</h2>
+          <p class="section-text">
+            From market entry and operations to team alignment and growth, get clear frameworks and actionable advice so
+            you can make decisions with confidence.
+          </p>
+          <ul class="feature-list">
+            <li>Structured sessions with deliverables</li>
+            <li>Industry-specific insight and best practices</li>
+            <li>Follow-up support to keep momentum</li>
+          </ul>
+          <a href="#" class="btn btn-secondary cta-payment" onclick="openPaymentModal(); return false;">Book a Call</a>
+        </div>
+        <div class="section-image-wrap">
+          <img src="images/4.jpg" alt="Business consulting and strategy session" width="800" height="600">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-about">
+      <div class="about-bg" role="img" aria-hidden="true"></div>
+      <div class="container about-inner">
+        <span class="section-tag">Why work with us</span>
+        <h2 class="section-title">Trusted by professionals</h2>
+        <div class="about-content">
+          <p class="section-text">
+            Years of experience in language training and business strategy mean you get methods that work, not theory.
+            Every session is focused on your next step.
+          </p>
+          <ul class="feature-list feature-list-minimal">
+            <li>Certified coaching & consulting practice</li>
+            <li>Confidential and professional</li>
+            <li>Results-oriented sessions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="section section-cta">
+      <div class="cta-bg"></div>
+      <div class="container cta-inner">
+        <h2 class="cta-title">Ready to level up?</h2>
+        <p class="cta-text">Choose language coaching, consulting, or both. One click to pay securely and book your
+          session.</p>
+        <a href="#" class="btn btn-primary btn-large cta-payment" onclick="openPaymentModal(); return false;">
+          Pay & Book Now
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+            style="vertical-align: middle; margin-left: 0.4em;" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+        <p class="cta-note">You'll be redirected to a payment page for secure payment.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; <span id="current-year"></span> Arsene Ousmane Methods. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Payment: country + network (PawaPay hosted page still lets customer confirm wallet/GSMA flow) -->
+  <div id="payment-modal" class="payment-modal" aria-hidden="true">
+    <div class="payment-modal__backdrop" data-close-modal aria-hidden="true"></div>
+    <div class="payment-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="payment-modal-title">
+      <h2 id="payment-modal-title" class="payment-modal__title">Pay with mobile money</h2>
+      <p class="payment-modal__lead">Choose your country and network. Amount and currency follow your selection. You
+        will finish on PawaPay’s secure page.</p>
+      <label class="payment-modal__field">
+        <span class="payment-modal__label">Country</span>
+        <select id="pay-country" class="payment-modal__select"></select>
+      </label>
+      <label class="payment-modal__field">
+        <span class="payment-modal__label">Mobile money network</span>
+        <select id="pay-operator" class="payment-modal__select"></select>
+      </label>
+      <label class="payment-modal__field" id="pay-currency-wrap" hidden>
+        <span class="payment-modal__label">Currency</span>
+        <select id="pay-currency" class="payment-modal__select"></select>
+      </label>
+      <label class="payment-modal__field">
+        <span class="payment-modal__label">Amount</span>
+        <input id="pay-amount" class="payment-modal__input" type="number" inputmode="decimal" min="0" step="0.01"
+          value="10" />
+      </label>
+      <div class="payment-modal__actions">
+        <button type="button" class="btn btn-secondary-small" id="pay-modal-cancel">Cancel</button>
+        <button type="button" class="btn btn-primary-small" id="pay-modal-continue">Continue to Payment</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="payment-markets.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
